@@ -1,0 +1,57 @@
+2025-10-15 01:08:06.856 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2703dc53-73ed-4ca5-a8fd-b77efc974ffe
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:07.476 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 01:08:07.508 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 01:08:07.522 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 01:08:07.582 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 01:08:08.038 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ecb54f12-9c79-4e79-9f5d-e37eecd80151
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:08.122 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 01:08:08.482 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 95584997-cde2-4be1-ac17-2c25ad0dbb2f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:08.530 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 01:08:08.565 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 01:08:08.578 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] ]
+2025-10-15 01:08:08.857 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5abd1b6f-69f7-4aa6-834f-c2d587651f53
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:09.152 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 01:08:09.159 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 01:08:09.457 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: de45aa86-30d3-40e4-8950-0866bea204ab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:09.500 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 01:08:09.747 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b17b4352-d7c6-43ac-8585-3b9482756297
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:09.785 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+

@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: 01-create-roles
+      author: egor
+      changes:
+        - createSequence:
+            sequenceName: role_seq
+            startValue: 1
+            incrementBy: 1
+
+        - createTable:
+            tableName: roles
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_roles
+                    nullable: false
+
+              - column:
+                  name: role_name
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+                    unique: true
+
+        - addDefaultValue:
+            tableName: roles
+            columnName: id
+            defaultValueComputed: "nextval('role_seq')"

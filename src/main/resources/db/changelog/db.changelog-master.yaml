@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - include:
+      file: changeset/create-table/db.changelog-01-create-roles.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/create-table/db.changelog-02-create-users.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/create-table/db.changelog-03-create-user-roles.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/create-table/db.changelog-04-create-cards.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/create-table/db.changelog-05-create-transfers.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/create-table/db.changelog-06-create-refresh-tokens.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/insert-entity/db.changelog-01-insert-default-roles.yml
+      relativeToChangelogFile: true
+  - include:
+      file: changeset/insert-entity/db.changelog-02-insert-default-admin.yml
+      relativeToChangelogFile: true

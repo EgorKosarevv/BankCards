@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-default-admin-user
+      author: egor
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: full_name
+                  value: admin1
+              - column:
+                  name: phone
+                  value: "12345678900"
+              - column:
+                  name: password
+                  value: "$2a$10$TirNgPNOebt43zGi6sLzeuN3vckA/lBa1Z8Ao1h22Kf3JqI3KmZ.G"
+              - column:
+                  name: enabled
+                  valueBoolean: true
+
+        - insert:
+            tableName: user_roles
+            columns:
+              - column:
+                  name: user_id
+                  valueNumeric: 1
+              - column:
+                  name: role_id
+                  valueNumeric: 2

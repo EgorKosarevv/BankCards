@@ -1,0 +1,615 @@
+2025-10-15 00:13:25.708 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminCardControllerTest]: AdminCardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:25.862 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminCardControllerTest
+2025-10-15 00:13:26.202 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-15 00:13:26.241 [main] INFO  o.e.b.c.AdminCardControllerTest - Starting AdminCardControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:26.242 [main] INFO  o.e.b.c.AdminCardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:28.918 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5ba4f870-2afd-4a24-b379-1bd3018a686b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:28.972 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:29.145 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:29.146 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:29.148 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-10-15 00:13:29.192 [main] INFO  o.e.b.c.AdminCardControllerTest - Started AdminCardControllerTest in 3.24 seconds (process running for 4.396)
+2025-10-15 00:13:29.516 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 00:13:29.547 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 00:13:29.560 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 00:13:29.617 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:13:29.654 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:29.668 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminUserControllerTest
+2025-10-15 00:13:29.708 [main] INFO  o.e.b.c.AdminUserControllerTest - Starting AdminUserControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:29.708 [main] INFO  o.e.b.c.AdminUserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:30.066 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1b97d05e-b7d6-47b5-84fb-f3802e3b9911
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:30.068 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:30.082 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:30.082 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:30.082 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:13:30.086 [main] INFO  o.e.b.c.AdminUserControllerTest - Started AdminUserControllerTest in 0.402 seconds (process running for 5.29)
+2025-10-15 00:13:30.144 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 00:13:30.151 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:30.162 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AuthControllerTest
+2025-10-15 00:13:30.190 [main] INFO  o.e.b.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:30.190 [main] INFO  o.e.b.controller.AuthControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:30.467 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d73fff79-235e-497d-be18-98b8a08de60f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:30.469 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:30.481 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:30.481 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:30.482 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:13:30.487 [main] INFO  o.e.b.controller.AuthControllerTest - Started AuthControllerTest in 0.317 seconds (process running for 5.69)
+2025-10-15 00:13:30.504 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 00:13:30.539 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 00:13:30.551 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 00:13:30.559 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:30.567 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.CardControllerTest
+2025-10-15 00:13:30.597 [main] INFO  o.e.b.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:30.597 [main] INFO  o.e.b.controller.CardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:30.843 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bb606012-a416-4fe6-b243-9059e0326c46
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:30.845 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:30.858 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:30.858 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:30.859 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:13:30.864 [main] INFO  o.e.b.controller.CardControllerTest - Started CardControllerTest in 0.291 seconds (process running for 6.068)
+2025-10-15 00:13:30.902 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 00:13:30.909 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 00:13:30.917 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.TransferControllerTest]: TransferControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:30.925 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.TransferControllerTest
+2025-10-15 00:13:30.957 [main] INFO  o.e.b.c.TransferControllerTest - Starting TransferControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:30.957 [main] INFO  o.e.b.c.TransferControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:31.249 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5c474041-5eaa-4f91-9f78-c96277dbe69f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:31.250 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:31.261 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:31.261 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:31.261 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:13:31.266 [main] INFO  o.e.b.c.TransferControllerTest - Started TransferControllerTest in 0.332 seconds (process running for 6.469)
+2025-10-15 00:13:31.292 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:13:31.313 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:13:31.324 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.UserControllerTest
+2025-10-15 00:13:31.352 [main] INFO  o.e.b.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.12 with PID 22044 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:13:31.352 [main] INFO  o.e.b.controller.UserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:13:31.587 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4902fa3e-9c62-4553-b6d7-5b84b18b07e8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:13:31.588 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:13:31.602 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:13:31.602 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:13:31.603 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:13:31.607 [main] INFO  o.e.b.controller.UserControllerTest - Started UserControllerTest in 0.276 seconds (process running for 6.811)
+2025-10-15 00:13:31.628 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:13:32.051 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The token has been updated
+2025-10-15 00:13:32.061 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The user has been successfully logged in
+2025-10-15 00:13:32.192 [main] INFO  o.e.b.service.impl.CardServiceImpl - Card 1 status changed to BLOCKED
+2025-10-15 00:13:32.200 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 deposited 10 to card 1
+2025-10-15 00:13:32.203 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card has been created: CardEntity(id=1, owner=UserEntity(id=1, fullName=null, phone=null, password=null, roles=[], enabled=true), last4=4228, status=ACTIVE, balance=0, expiry=2025-10-15T00:13:32.203677400, blockRequested=false)
+2025-10-15 00:13:32.221 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 requested block for card 1.
+2025-10-15 00:13:32.223 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card with ID 1 has been deleted
+2025-10-15 00:13:32.292 [main] INFO  o.e.b.s.impl.RefreshTokenServiceImpl - Expired tokens removed: 3
+2025-10-15 00:13:32.463 [main] INFO  o.e.b.s.impl.TransferServiceImpl - User 1 transferred 50 from card 1 to card 2
+2025-10-15 00:13:32.554 [main] INFO  o.e.b.service.impl.UserServiceImpl - The roles of the user with ID 1 have been successfully updated 
+2025-10-15 00:13:32.575 [main] INFO  o.e.b.service.impl.UserServiceImpl - the status of the user with ID 1 has been updated
+2025-10-15 00:14:55.553 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminCardControllerTest]: AdminCardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:14:55.700 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminCardControllerTest
+2025-10-15 00:14:55.997 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-15 00:14:56.039 [main] INFO  o.e.b.c.AdminCardControllerTest - Starting AdminCardControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:14:56.040 [main] INFO  o.e.b.c.AdminCardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:14:58.721 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cc5c3fdb-cd3b-4a0f-b183-cbe652b0cb11
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:14:58.772 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:14:58.993 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:14:58.993 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:14:58.994 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:14:59.030 [main] INFO  o.e.b.c.AdminCardControllerTest - Started AdminCardControllerTest in 3.252 seconds (process running for 4.346)
+2025-10-15 00:14:59.434 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 00:14:59.470 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 00:14:59.481 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 00:14:59.534 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:14:59.571 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:14:59.582 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminUserControllerTest
+2025-10-15 00:14:59.619 [main] INFO  o.e.b.c.AdminUserControllerTest - Starting AdminUserControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:14:59.619 [main] INFO  o.e.b.c.AdminUserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:14:59.970 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 311702e1-f89c-46e3-b70e-716c047e1bd2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:14:59.971 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:14:59.982 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:14:59.982 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:14:59.982 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:14:59.988 [main] INFO  o.e.b.c.AdminUserControllerTest - Started AdminUserControllerTest in 0.391 seconds (process running for 5.303)
+2025-10-15 00:15:00.051 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 00:15:00.058 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:15:00.068 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AuthControllerTest
+2025-10-15 00:15:00.095 [main] INFO  o.e.b.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:15:00.095 [main] INFO  o.e.b.controller.AuthControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:15:00.359 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e62c4d8e-0c9e-4f06-936e-3a81fbb2501a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:15:00.360 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:15:00.374 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:15:00.375 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:15:00.375 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:15:00.381 [main] INFO  o.e.b.controller.AuthControllerTest - Started AuthControllerTest in 0.303 seconds (process running for 5.696)
+2025-10-15 00:15:00.398 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 00:15:00.428 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 00:15:00.439 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] ]
+2025-10-15 00:15:00.443 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:15:00.451 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.CardControllerTest
+2025-10-15 00:15:00.473 [main] INFO  o.e.b.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:15:00.475 [main] INFO  o.e.b.controller.CardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:15:00.695 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: dce94089-0716-4eaa-bb18-0afe58af4a85
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:15:00.696 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:15:00.706 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:15:00.706 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:15:00.706 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:15:00.709 [main] INFO  o.e.b.controller.CardControllerTest - Started CardControllerTest in 0.252 seconds (process running for 6.025)
+2025-10-15 00:15:00.741 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 00:15:00.747 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 00:15:00.754 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.TransferControllerTest]: TransferControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:15:00.760 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.TransferControllerTest
+2025-10-15 00:15:00.782 [main] INFO  o.e.b.c.TransferControllerTest - Starting TransferControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:15:00.782 [main] INFO  o.e.b.c.TransferControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:15:01.017 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 62529fb0-b2a2-42e8-b09d-d18aeb7c9cb5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:15:01.018 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:15:01.028 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:15:01.028 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:15:01.029 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:15:01.032 [main] INFO  o.e.b.c.TransferControllerTest - Started TransferControllerTest in 0.264 seconds (process running for 6.347)
+2025-10-15 00:15:01.053 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:15:01.071 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:15:01.076 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.UserControllerTest
+2025-10-15 00:15:01.097 [main] INFO  o.e.b.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.12 with PID 26764 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:15:01.097 [main] INFO  o.e.b.controller.UserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:15:01.300 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 06c2870f-4535-4cd4-82c3-0714e03d0a00
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:15:01.301 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:15:01.311 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:15:01.311 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:15:01.313 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+2025-10-15 00:15:01.316 [main] INFO  o.e.b.controller.UserControllerTest - Started UserControllerTest in 0.234 seconds (process running for 6.632)
+2025-10-15 00:15:01.334 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:15:01.742 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The token has been updated
+2025-10-15 00:15:01.752 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The user has been successfully logged in
+2025-10-15 00:15:01.852 [main] INFO  o.e.b.service.impl.CardServiceImpl - Card 1 status changed to BLOCKED
+2025-10-15 00:15:01.860 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 deposited 10 to card 1
+2025-10-15 00:15:01.863 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card has been created: CardEntity(id=1, owner=UserEntity(id=1, fullName=null, phone=null, password=null, roles=[], enabled=true), last4=1691, status=ACTIVE, balance=0, expiry=2025-10-15T00:15:01.861721200, blockRequested=false)
+2025-10-15 00:15:01.883 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 requested block for card 1.
+2025-10-15 00:15:01.885 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card with ID 1 has been deleted
+2025-10-15 00:15:01.945 [main] INFO  o.e.b.s.impl.RefreshTokenServiceImpl - Expired tokens removed: 3
+2025-10-15 00:15:02.098 [main] INFO  o.e.b.s.impl.TransferServiceImpl - User 1 transferred 50 from card 1 to card 2
+2025-10-15 00:15:02.194 [main] INFO  o.e.b.service.impl.UserServiceImpl - The roles of the user with ID 1 have been successfully updated 
+2025-10-15 00:15:02.214 [main] INFO  o.e.b.service.impl.UserServiceImpl - the status of the user with ID 1 has been updated
+2025-10-15 00:16:02.298 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminCardControllerTest]: AdminCardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:02.437 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminCardControllerTest
+2025-10-15 00:16:02.764 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-15 00:16:02.804 [main] INFO  o.e.b.c.AdminCardControllerTest - Starting AdminCardControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:02.805 [main] INFO  o.e.b.c.AdminCardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:05.453 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 70a31a6e-2162-4194-b6f1-33130b006edc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:05.492 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:05.691 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:05.692 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:05.693 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:16:05.740 [main] INFO  o.e.b.c.AdminCardControllerTest - Started AdminCardControllerTest in 3.217 seconds (process running for 4.297)
+2025-10-15 00:16:06.152 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 00:16:06.179 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 00:16:06.190 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 00:16:06.244 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:16:06.281 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:06.297 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminUserControllerTest
+2025-10-15 00:16:06.334 [main] INFO  o.e.b.c.AdminUserControllerTest - Starting AdminUserControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:06.336 [main] INFO  o.e.b.c.AdminUserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:06.677 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9e352536-fec7-48f9-ab36-b3754a948c4f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:06.679 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:06.692 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:06.693 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:06.693 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:16:06.697 [main] INFO  o.e.b.c.AdminUserControllerTest - Started AdminUserControllerTest in 0.385 seconds (process running for 5.256)
+2025-10-15 00:16:06.760 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 00:16:06.767 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:06.777 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AuthControllerTest
+2025-10-15 00:16:06.804 [main] INFO  o.e.b.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:06.805 [main] INFO  o.e.b.controller.AuthControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:07.082 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6c478197-df23-4134-8d20-00d1a048c6aa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:07.083 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:07.094 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:07.094 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:07.095 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:16:07.100 [main] INFO  o.e.b.controller.AuthControllerTest - Started AuthControllerTest in 0.312 seconds (process running for 5.657)
+2025-10-15 00:16:07.116 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 00:16:07.144 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 00:16:07.155 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] ]
+2025-10-15 00:16:07.161 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:07.170 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.CardControllerTest
+2025-10-15 00:16:07.200 [main] INFO  o.e.b.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:07.201 [main] INFO  o.e.b.controller.CardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:07.459 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c64c810f-7be4-43de-85c1-8e4d374357c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:07.460 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:07.474 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:07.474 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:07.474 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:16:07.478 [main] INFO  o.e.b.controller.CardControllerTest - Started CardControllerTest in 0.3 seconds (process running for 6.036)
+2025-10-15 00:16:07.517 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 00:16:07.526 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 00:16:07.532 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.TransferControllerTest]: TransferControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:07.541 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.TransferControllerTest
+2025-10-15 00:16:07.569 [main] INFO  o.e.b.c.TransferControllerTest - Starting TransferControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:07.569 [main] INFO  o.e.b.c.TransferControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:07.871 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c5a214d4-373b-45bc-93e6-cd02c2ce17de
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:07.872 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:07.882 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:07.883 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:07.883 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:16:07.889 [main] INFO  o.e.b.c.TransferControllerTest - Started TransferControllerTest in 0.337 seconds (process running for 6.446)
+2025-10-15 00:16:07.913 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:16:07.929 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:16:07.934 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.UserControllerTest
+2025-10-15 00:16:07.957 [main] INFO  o.e.b.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.12 with PID 34116 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:16:07.958 [main] INFO  o.e.b.controller.UserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 00:16:08.199 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 61a956c3-8b63-472f-9b22-0f0b8226e08e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:16:08.200 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:16:08.214 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:16:08.214 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:16:08.215 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:16:08.220 [main] INFO  o.e.b.controller.UserControllerTest - Started UserControllerTest in 0.279 seconds (process running for 6.778)
+2025-10-15 00:16:08.239 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:16:08.653 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The token has been updated
+2025-10-15 00:16:08.661 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The user has been successfully logged in
+2025-10-15 00:16:08.772 [main] INFO  o.e.b.service.impl.CardServiceImpl - Card 1 status changed to BLOCKED
+2025-10-15 00:16:08.780 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 deposited 10 to card 1
+2025-10-15 00:16:08.783 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card has been created: CardEntity(id=1, owner=UserEntity(id=1, fullName=null, phone=null, password=null, roles=[], enabled=true), last4=0609, status=ACTIVE, balance=0, expiry=2025-10-15T00:16:08.783093900, blockRequested=false)
+2025-10-15 00:16:08.800 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 requested block for card 1.
+2025-10-15 00:16:08.802 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card with ID 1 has been deleted
+2025-10-15 00:16:08.866 [main] INFO  o.e.b.s.impl.RefreshTokenServiceImpl - Expired tokens removed: 3
+2025-10-15 00:16:09.024 [main] INFO  o.e.b.s.impl.TransferServiceImpl - User 1 transferred 50 from card 1 to card 2
+2025-10-15 00:16:09.114 [main] INFO  o.e.b.service.impl.UserServiceImpl - The roles of the user with ID 1 have been successfully updated 
+2025-10-15 00:16:09.131 [main] INFO  o.e.b.service.impl.UserServiceImpl - the status of the user with ID 1 has been updated
+2025-10-15 00:22:00.951 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminCardControllerTest]: AdminCardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:01.100 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminCardControllerTest
+2025-10-15 00:22:01.406 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-15 00:22:01.447 [main] INFO  o.e.b.c.AdminCardControllerTest - Starting AdminCardControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:01.448 [main] INFO  o.e.b.c.AdminCardControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:04.052 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 97b92fc8-0476-4c34-86f6-668d8ca77483
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:04.085 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:04.291 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:04.291 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:04.293 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:22:04.321 [main] INFO  o.e.b.c.AdminCardControllerTest - Started AdminCardControllerTest in 3.138 seconds (process running for 4.25)
+2025-10-15 00:22:04.704 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 00:22:04.731 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 00:22:04.740 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 00:22:04.792 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:22:04.836 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:04.857 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminUserControllerTest
+2025-10-15 00:22:04.890 [main] INFO  o.e.b.c.AdminUserControllerTest - Starting AdminUserControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:04.891 [main] INFO  o.e.b.c.AdminUserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:05.226 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 411df69e-7126-47a2-95cd-1bf683258071
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:05.228 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:05.239 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:05.240 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:05.240 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:22:05.246 [main] INFO  o.e.b.c.AdminUserControllerTest - Started AdminUserControllerTest in 0.376 seconds (process running for 5.173)
+2025-10-15 00:22:05.302 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 00:22:05.309 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:05.317 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AuthControllerTest
+2025-10-15 00:22:05.342 [main] INFO  o.e.b.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:05.342 [main] INFO  o.e.b.controller.AuthControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:05.612 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 179767a6-84c3-40eb-80da-d90bf9439d08
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:05.613 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:05.625 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:05.625 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:05.627 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:22:05.631 [main] INFO  o.e.b.controller.AuthControllerTest - Started AuthControllerTest in 0.305 seconds (process running for 5.559)
+2025-10-15 00:22:05.650 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 00:22:05.684 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 00:22:05.697 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] ]
+2025-10-15 00:22:05.703 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:05.711 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.CardControllerTest
+2025-10-15 00:22:05.731 [main] INFO  o.e.b.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:05.731 [main] INFO  o.e.b.controller.CardControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:05.945 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7f7237cf-cf14-463b-b14d-dc0062e6851d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:05.946 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:05.957 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:05.957 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:05.958 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:22:05.962 [main] INFO  o.e.b.controller.CardControllerTest - Started CardControllerTest in 0.246 seconds (process running for 5.89)
+2025-10-15 00:22:06.013 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 00:22:06.019 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 00:22:06.026 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.TransferControllerTest]: TransferControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:06.034 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.TransferControllerTest
+2025-10-15 00:22:06.056 [main] INFO  o.e.b.c.TransferControllerTest - Starting TransferControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:06.056 [main] INFO  o.e.b.c.TransferControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:06.278 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 46172d6a-92d6-45c2-ba6e-fb236511c4a7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:06.279 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:06.290 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:06.290 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:06.291 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 00:22:06.295 [main] INFO  o.e.b.c.TransferControllerTest - Started TransferControllerTest in 0.254 seconds (process running for 6.222)
+2025-10-15 00:22:06.316 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:22:06.332 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 00:22:06.340 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.UserControllerTest
+2025-10-15 00:22:06.359 [main] INFO  o.e.b.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.12 with PID 23648 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 00:22:06.359 [main] INFO  o.e.b.controller.UserControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-10-15 00:22:06.557 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8c1e85d3-02e2-4c41-a2d9-8478e0d304a1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 00:22:06.558 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 00:22:06.569 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 00:22:06.569 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 00:22:06.569 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 00:22:06.574 [main] INFO  o.e.b.controller.UserControllerTest - Started UserControllerTest in 0.228 seconds (process running for 6.501)
+2025-10-15 00:22:06.590 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 00:22:06.983 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The token has been updated
+2025-10-15 00:22:06.992 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The user has been successfully logged in
+2025-10-15 00:22:07.091 [main] INFO  o.e.b.service.impl.CardServiceImpl - Card 1 status changed to BLOCKED
+2025-10-15 00:22:07.099 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 deposited 10 to card 1
+2025-10-15 00:22:07.101 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card has been created: CardEntity(id=1, owner=UserEntity(id=1, fullName=null, phone=null, password=null, roles=[], enabled=true), last4=2347, status=ACTIVE, balance=0, expiry=2025-10-15T00:22:07.101884500, blockRequested=false)
+2025-10-15 00:22:07.120 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 requested block for card 1.
+2025-10-15 00:22:07.122 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card with ID 1 has been deleted
+2025-10-15 00:22:07.182 [main] INFO  o.e.b.s.impl.RefreshTokenServiceImpl - Expired tokens removed: 3
+2025-10-15 00:22:07.330 [main] INFO  o.e.b.s.impl.TransferServiceImpl - User 1 transferred 50 from card 1 to card 2
+2025-10-15 00:22:07.410 [main] INFO  o.e.b.service.impl.UserServiceImpl - The roles of the user with ID 1 have been successfully updated 
+2025-10-15 00:22:07.428 [main] INFO  o.e.b.service.impl.UserServiceImpl - the status of the user with ID 1 has been updated
+2025-10-15 01:08:03.079 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminCardControllerTest]: AdminCardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:03.232 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminCardControllerTest
+2025-10-15 01:08:03.559 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-10-15 01:08:03.598 [main] INFO  o.e.b.c.AdminCardControllerTest - Starting AdminCardControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:03.600 [main] INFO  o.e.b.c.AdminCardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:06.856 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2703dc53-73ed-4ca5-a8fd-b77efc974ffe
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:06.893 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:07.057 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:07.058 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:07.059 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 01:08:07.088 [main] INFO  o.e.b.c.AdminCardControllerTest - Started AdminCardControllerTest in 3.777 seconds (process running for 4.922)
+2025-10-15 01:08:07.476 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.changeCardStatus(java.lang.Long,org.example.bankcards.dto.card.request.CardStatusUpdateRequestDTO): [Field error in object 'cardStatusUpdateRequestDTO' on field 'status': rejected value [null]; codes [NotNull.cardStatusUpdateRequestDTO.status,NotNull.status,NotNull.org.example.bankcards.entity.CardStatus,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardStatusUpdateRequestDTO.status,status]; arguments []; default message [status]]; default message [Status must not be null]] ]
+2025-10-15 01:08:07.508 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot delete card
+2025-10-15 01:08:07.522 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminCardController.createCard(org.example.bankcards.dto.card.request.CardRequestDTO): [Field error in object 'cardRequestDTO' on field 'ownerId': rejected value [null]; codes [NotNull.cardRequestDTO.ownerId,NotNull.ownerId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardRequestDTO.ownerId,ownerId]; arguments []; default message [ownerId]]; default message [Owner ID must not be null]] ]
+2025-10-15 01:08:07.582 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 01:08:07.620 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AdminUserControllerTest]: AdminUserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:07.634 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AdminUserControllerTest
+2025-10-15 01:08:07.672 [main] INFO  o.e.b.c.AdminUserControllerTest - Starting AdminUserControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:07.673 [main] INFO  o.e.b.c.AdminUserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:08.038 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ecb54f12-9c79-4e79-9f5d-e37eecd80151
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:08.041 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:08.055 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:08.056 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:08.056 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 01:08:08.061 [main] INFO  o.e.b.c.AdminUserControllerTest - Started AdminUserControllerTest in 0.411 seconds (process running for 5.896)
+2025-10-15 01:08:08.122 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [2] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AdminUserController.updateUserRoles(java.lang.Long,org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.user.request.UserRoleUpdateRequestDTO): [Field error in object 'userRoleUpdateRequestDTO' on field 'roles': rejected value [null]; codes [NotEmpty.userRoleUpdateRequestDTO.roles,NotEmpty.roles,NotEmpty.java.util.Set,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRoleUpdateRequestDTO.roles,roles]; arguments []; default message [roles]]; default message [must not be empty]] ]
+2025-10-15 01:08:08.131 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:08.141 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.AuthControllerTest
+2025-10-15 01:08:08.169 [main] INFO  o.e.b.controller.AuthControllerTest - Starting AuthControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:08.169 [main] INFO  o.e.b.controller.AuthControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:08.482 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 95584997-cde2-4be1-ac17-2c25ad0dbb2f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:08.484 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:08.500 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:08.501 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:08.502 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 01:08:08.510 [main] INFO  o.e.b.controller.AuthControllerTest - Started AuthControllerTest in 0.36 seconds (process running for 6.345)
+2025-10-15 01:08:08.530 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.login(org.example.bankcards.dto.user.request.UserAuthRequestDTO): [Field error in object 'userAuthRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userAuthRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userAuthRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] ]
+2025-10-15 01:08:08.565 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<org.example.bankcards.dto.user.response.UserAuthResponseDTO> org.example.bankcards.controller.AuthController.refreshToken(org.example.bankcards.dto.user.request.RefreshTokenRequestDTO): [Field error in object 'refreshTokenRequestDTO' on field 'refreshToken': rejected value [null]; codes [NotBlank.refreshTokenRequestDTO.refreshToken,NotBlank.refreshToken,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [refreshTokenRequestDTO.refreshToken,refreshToken]; arguments []; default message [refreshToken]]; default message [must not be blank]] ]
+2025-10-15 01:08:08.578 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.AuthController.register(org.example.bankcards.dto.user.request.UserRegisterRequestDTO) with 2 errors: [Field error in object 'userRegisterRequestDTO' on field 'password': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.password,password]; arguments []; default message [password]]; default message [The password must not be empty]] [Field error in object 'userRegisterRequestDTO' on field 'fullName': rejected value [null]; codes [NotBlank.userRegisterRequestDTO.fullName,NotBlank.fullName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegisterRequestDTO.fullName,fullName]; arguments []; default message [fullName]]; default message [The full name must not be empty]] ]
+2025-10-15 01:08:08.585 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.CardControllerTest]: CardControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:08.594 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.CardControllerTest
+2025-10-15 01:08:08.616 [main] INFO  o.e.b.controller.CardControllerTest - Starting CardControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:08.616 [main] INFO  o.e.b.controller.CardControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:08.857 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5abd1b6f-69f7-4aa6-834f-c2d587651f53
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:08.859 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:08.879 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:09.118 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:09.119 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2025-10-15 01:08:09.123 [main] INFO  o.e.b.controller.CardControllerTest - Started CardControllerTest in 0.524 seconds (process running for 6.958)
+2025-10-15 01:08:09.152 [main] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<java.lang.Void> org.example.bankcards.controller.CardController.depositToCard(org.example.bankcards.security.UserDetailsImpl,org.example.bankcards.dto.card.request.CardDepositRequestDTO): [Field error in object 'cardDepositRequestDTO' on field 'amount': rejected value [-100]; codes [DecimalMin.cardDepositRequestDTO.amount,DecimalMin.amount,DecimalMin.java.math.BigDecimal,DecimalMin]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [cardDepositRequestDTO.amount,amount]; arguments []; default message [amount],true,0.01]; default message [Deposit amount must be greater than 0]] ]
+2025-10-15 01:08:09.159 [main] ERROR o.e.b.e.GlobalExceptionHandler - Error service: Cannot block card
+2025-10-15 01:08:09.167 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.TransferControllerTest]: TransferControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:09.174 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.TransferControllerTest
+2025-10-15 01:08:09.202 [main] INFO  o.e.b.c.TransferControllerTest - Starting TransferControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:09.203 [main] INFO  o.e.b.c.TransferControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:09.457 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: de45aa86-30d3-40e4-8950-0866bea204ab
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:09.458 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:09.469 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:09.470 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:09.470 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 01:08:09.474 [main] INFO  o.e.b.c.TransferControllerTest - Started TransferControllerTest in 0.291 seconds (process running for 7.309)
+2025-10-15 01:08:09.500 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 01:08:09.517 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.example.bankcards.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-15 01:08:09.525 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.example.bankcards.BankCardsApplication for test class org.example.bankcards.controller.UserControllerTest
+2025-10-15 01:08:09.545 [main] INFO  o.e.b.controller.UserControllerTest - Starting UserControllerTest using Java 17.0.12 with PID 16640 (started by User in E:\study\ideaProjects\train\BankCards)
+2025-10-15 01:08:09.545 [main] INFO  o.e.b.controller.UserControllerTest - The following 1 profile is active: "dev"
+2025-10-15 01:08:09.747 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b17b4352-d7c6-43ac-8585-3b9482756297
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-10-15 01:08:09.749 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-10-15 01:08:09.761 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-10-15 01:08:09.762 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-10-15 01:08:09.762 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2025-10-15 01:08:09.766 [main] INFO  o.e.b.controller.UserControllerTest - Started UserControllerTest in 0.235 seconds (process running for 7.6)
+2025-10-15 01:08:09.785 [main] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-10-15 01:08:10.194 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The token has been updated
+2025-10-15 01:08:10.200 [main] INFO  o.e.b.service.impl.AuthServiceImpl - The user has been successfully logged in
+2025-10-15 01:08:10.329 [main] INFO  o.e.b.service.impl.CardServiceImpl - Card 1 status changed to BLOCKED
+2025-10-15 01:08:10.338 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 deposited 10 to card 1
+2025-10-15 01:08:10.341 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card has been created: CardEntity(id=1, owner=UserEntity(id=1, fullName=null, phone=null, password=null, roles=[], enabled=true), last4=0086, status=ACTIVE, balance=0, expiry=2025-10-15T01:08:10.341371800, blockRequested=false)
+2025-10-15 01:08:10.358 [main] INFO  o.e.b.service.impl.CardServiceImpl - User 1 requested block for card 1.
+2025-10-15 01:08:10.361 [main] INFO  o.e.b.service.impl.CardServiceImpl - The card with ID 1 has been deleted
+2025-10-15 01:08:10.435 [main] INFO  o.e.b.s.impl.RefreshTokenServiceImpl - Expired tokens removed: 3
+2025-10-15 01:08:10.649 [main] INFO  o.e.b.s.impl.TransferServiceImpl - User 1 transferred 50 from card 1 to card 2
+2025-10-15 01:08:10.756 [main] INFO  o.e.b.service.impl.UserServiceImpl - The roles of the user with ID 1 have been successfully updated 
+2025-10-15 01:08:10.782 [main] INFO  o.e.b.service.impl.UserServiceImpl - the status of the user with ID 1 has been updated
