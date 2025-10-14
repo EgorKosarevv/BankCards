@@ -36,7 +36,7 @@ Detailed guide for setting up and running a Spring Boot application with Docker 
 
 ```bash
 git clone https://github.com/EgorKosarevv/BankCards.git
-cd FinalProjectSenla
+cd BankCards
 ```
 
 ---
