@@ -22,7 +22,13 @@ Detailed guide for setting up and running a Spring Boot application with Docker 
 - Apache Maven 3.9.9  
 - Spring Boot 3.3.5  
 - Docker 28.0.4  
-- Git 2.49  
+- Git 2.49
+- PostgreSQL
+- MapStruct
+- Liquibase
+- Swagger
+- JWT
+
 
 ---
 
@@ -38,7 +44,7 @@ cd FinalProjectSenla
 ## Configuration
 
 1. In the root directory, there is a `docker-compose.yml` file. It defines the following services:  
-   - `app` — your Spring Boot application  
+   - `app` —  Spring Boot application  
    - `postgres` — PostgreSQL database  
 
 2. If needed, update the environment variables in `docker-compose.yml`, e.g., database settings.
@@ -47,14 +53,15 @@ cd FinalProjectSenla
 
 ## Building the Application
 
-Before starting the application, you need to build the Docker image:
+Before running the application, you need to build the project and create the executable JAR file.
+1. Make sure that Java 17+ and Maven are installed on your system..
 
-1. Make sure Maven and Java are installed.
+2. Open the project directory in the terminal
 
-2. Run the following command to build the image:
+3. Run the following command to build the project:
 
 ```bash
-mvn clean spring-boot:build-image
+mvn clean install
 ```
 
 ---
